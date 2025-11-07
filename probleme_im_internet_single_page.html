@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Probleme im Internet — Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#263238;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --bg:#f2f4f6;
+      --teal:#2b6f7f;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Montserrat,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+    .container{max-width:1000px;margin:36px auto;padding:28px}
+
+    .card{display:grid;grid-template-columns:1fr 360px;gap:20px;background:linear-gradient(180deg,#2b2f33 0%, #1f2629 100%);padding:26px;border-radius:10px;color:#fff;box-shadow:0 8px 30px rgba(10,15,20,0.12)}
+
+    .left{padding:10px 18px}
+    h1{font-size:36px;margin:8px 0 18px;letter-spacing:1px}
+    p{line-height:1.45;color:rgba(255,255,255,0.92);margin:10px 0}
+    .muted{color:rgba(255,255,255,0.75)}
+
+    .right{background:var(--card);color:#222;padding:20px;border-radius:8px}
+    .right h3{margin:6px 0 12px;font-size:18px;color:var(--accent)}
+    .item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #eee}
+    .icon{width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border-radius:8px;background:#f5f7f8}
+    .icon svg{width:22px;height:22px}
+    .item p{margin:0;font-size:14px;color:#333}
+    .item small{display:block;color:#666;margin-top:6px}
+
+    .hotline{background:#fff;padding:12px 18px;border-radius:8px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 12px rgba(16,24,28,0.06);margin-top:18px}
+    .hotline .label{font-weight:600;color:#222}
+    .hotline a.call-button{background:var(--teal);color:#fff;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700;transition:background .2s}
+    .hotline a.call-button:hover{background:#1f5b67}
+
+    footer{margin-top:18px;color:#dfe6e9;font-size:14px}
+
+    @media (max-width:880px){
+      .card{grid-template-columns:1fr;}
+      .right{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="left">
+        <h1>Probleme im Internet</h1>
+        <p class="muted">Kinder und Jugendliche lernen schon früh, mit dem Internet umzugehen.</p>
+        <p>Dadurch setzen sie sich auch verschiedenen Online-Gefahren aus (siehe rechte Seite).</p>
+        <p>Das größte Problem ist die Anonymität:</p>
+        <p>Wenn dich jemand im Internet auf schlimmste Weise mobbt, ist es oft sehr schwierig, diese Person im echten Leben zu finden.</p>
+        <p>Wenn du Hilfe bei Internet-Problemen brauchst, kannst du die unten angegebene Nummer anrufen.</p>
+        <p>Die Hotline ist Montag bis Freitag von 8:00 bis 18:00 Uhr erreichbar.</p>
+
+        <p style="margin-top:18px;font-weight:600">Mehr Informationen findest du auf der Website: <a href="https://www.probleme-im-internet-speyer.com" target="_blank" style="color:#bfe7ef">www.probleme-im-internet-speyer.com</a></p>
+
+        <footer class="hotline" style="margin-top:26px">
+          <div>
+            <div class="label">Nummer für Hilfe</div>
+          </div>
+          <a href="tel:08002741000" class="call-button">📞 0800 274 1000</a>
+        </footer>
+
+      </div>
+
+      <aside class="right">
+        <h3>Online-Gefahren</h3>
+
+        <div class="item">
+          <div class="icon" aria-hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path><path d="M20 21v-1a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v1"></path></svg>
+          </div>
+          <div>
+            <p><strong>Datenschutz:</strong></p>
+            <small>Persönliche Daten können gestohlen oder missbraucht werden.</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16v2a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-2"></path><path d="M12 11v5"></path><path d="M7 9l1.5-2.5"></path><path d="M17 9l-1.5-2.5"></path><path d="M3 12h4"></path><path d="M17 12h4"></path></svg>
+          </div>
+          <div>
+            <p><strong>Viren &amp; Malware:</strong></p>
+            <small>Schadprogramme zerstören oder überwachen Geräte.</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"></path><path d="M3 12h18"></path><path d="M3 17h18"></path></svg>
+          </div>
+          <div>
+            <p><strong>Betrug &amp; Phishing:</strong></p>
+            <small>Falsche Mails oder Shops wollen Geld und Passwörter stehlen.</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <div>
+            <p><strong>Cybermobbing:</strong></p>
+            <small>Beleidigungen und Belästigungen in Chats und sozialen Medien.</small>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 6H3v12a2 2 0 0 0 2 2h14V6z"></path><path d="M7 6v12"></path></svg>
+          </div>
+          <div>
+            <p><strong>Fake News:</strong></p>
+            <small>Falschinformationen manipulieren Meinungen.</small>
+          </div>
+        </div>
+
+        <div class="item" style="border-bottom:0">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3"></circle><path d="M5.5 20a6.5 6.5 0 0 1 13 0"></path></svg>
+          </div>
+          <div>
+            <p><strong>Jugendschutz:</strong></p>
+            <small>Ungeeignete Inhalte oder gefährliche Kontakte.</small>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;color:#333;font-size:14px;font-weight:600">Website: <a href="https://www.probleme-im-internet-speyer.com" target="_blank" style="color:#2b6f7f;text-decoration:none">www.probleme-im-internet-speyer.com</a></p>
+
+    <p style="text-align:center;margin-top:10px;color:#666;font-size:13px">(Vorlage: Informationsblatt)</p>
+  </div>
+</body>
+</html>
